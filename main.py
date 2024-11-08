@@ -3,20 +3,17 @@ from tkinter import ttk
 
 class Application:
     wn_title = "Tetris"
-    
-    def __init__(self, wn_width, wn_height):
-        self.wn_width = wn_width
-        self.wn_height = wn_height
-        
-    def start(name) : 
+    wn_width = 500
+    wn_height = 500
+    wn_bgColor = "#242424"
+            
+    def start(self) : 
         window = Tk()
-        window.title("Tetris")
-        window = Tk()
-        window.title("Tetris")
-        window.configure(bg="#242424")
-        window.geometry("500x500")
+        window.title(self.wn_title)
+        window.configure(bg=self.wn_bgColor)
+        window.geometry(f"{self.wn_width}x{self.wn_height}")
         window.resizable(0,0)
         window.mainloop()
         
-tetris = Application("500", "500")
+tetris = Application()
 tetris.start()
