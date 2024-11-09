@@ -3,7 +3,6 @@ from tkinter import ttk
 from pynput import keyboard as kb
 
 def press(key):
-
 	match (key):
 		case kb.Key.left:
 			print("Left")
